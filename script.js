@@ -166,9 +166,16 @@ function script_6() {
 function script_7() {
   // Adobot party !
 
+  let next_one = true
+  while(true){
   answer = prompt("Bonjour je suis botado. Comment puis-je ne pas t'aider ?");
 
-  let next_one = true
+  if (answer === "shutoff" ){ 
+    console.log("ZzzZzzZzz ..."); 
+    break;
+    };
+
+    next_one = true
 
   if (answer.length === 0 && next_one === true ){ 
     console.log("t'es en PLS ?"); 
@@ -192,6 +199,7 @@ function script_7() {
 
   if ( next_one === true ){ 
     console.log("balek.");; 
-    };
+    }
+  }
 
 }
